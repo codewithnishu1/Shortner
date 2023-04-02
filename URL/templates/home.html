@@ -1,0 +1,22 @@
+{% extends 'nav.html' %}
+
+{% block content %}
+<h1 class="text-center">Welcome to my HomePage Where you can customize Url's</h1>
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTstr4FrOqK32HLfm9C0Hm1L1wiDnn4Mu7gzgjXIYQrbuDWCHpQwZBMNum1yvT966rqYbA&usqp=CAU" width="600em"></center>
+{% if error %}
+    <div class="container shadow p-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>The Url you are looking for doesn't exist</p>
+                <a href="/dashboard" class="btn btn-primary">Shorten A Url</a>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
+</body>
+
+</html>
+
+{% endblock %}
